@@ -12,7 +12,7 @@ import org.sp.tproject.calendar.domain.Client;
 import util.DBManager;
 
 public class ClientDAO {
-	String url = "jdbc:oracle:thin:@localhost:1521:XE";
+	String url = "jdbc:oracle:thin:@192.168.1.54:1521:XE";
 	String user ="pomodoro";
 	String password = "1234";
 	DBManager dbManager;

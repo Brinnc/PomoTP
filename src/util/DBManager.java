@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DBManager {
-	String url="jdbc:oracle:thin:@localhost:1521:XE";
+	String url="jdbc:oracle:thin:@192.168.1.54:1521:XE";
 	String user="pomodoro";
 	String password="1234";
 	
