@@ -259,14 +259,14 @@ public class DiaryPage extends Page{
 					
 					String value="";
 					
-					//다이어리에 드러있는 데이터와 해당 날짜와 비교해서, 같다면 출력
-					System.out.println("printNum으ㅡ로 찍기 짖ㄱ전에 "+mainFrame.client);
+					//다이어리에 들어있는 데이터와 해당 날짜와 비교해서, 같다면 출력
+					//System.out.println("printNum으로 찍기 전에 "+mainFrame.client);
 					
 					if(mainFrame.clientDTO !=null) { //로그인 한 상태에서만 아래 코드 동작 
 						for(int k=0;k<planList.size();k++) {
 							Plan plan=planList.get(k);
 							
-							System.out.println("회원의 planlist 는 "+planList.size()+"yy="+plan.getYy()+", mm="+plan.getMm()+",dd="+plan.getDd());
+							//System.out.println("회원의 planlist 는 "+planList.size()+"yy="+plan.getYy()+", mm="+plan.getMm()+",dd="+plan.getDd());
 							
 							//연, 월, 일이 일치한다면 알맞는 출력
 							int yy=cal.get(Calendar.YEAR);
@@ -322,7 +322,6 @@ public class DiaryPage extends Page{
 	
 	
 }
-
 
 
 
