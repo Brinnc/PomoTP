@@ -103,7 +103,7 @@ public class MainFrame extends JFrame{
 		
 		//로그인폼 생성
 //		loginForm=new LoginForm(this, clientLoginPage);
-		clientLoginPage = new ClientLoginPage(this);
+		//clientLoginPage = new ClientLoginPage(this);
 		
 		//디폴트 페이지는 메인페이지
 		showHide(MAIN);

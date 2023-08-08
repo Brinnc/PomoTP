@@ -161,7 +161,6 @@ public class LoginForm extends Depth1Page {
 			JOptionPane.showMessageDialog(this, "로그인성공");
 			// 메인 프레임 보이게 만들고, 로그인 창 없애기
 			// mainFrame.setVisible(true);
-			clientLoginPage.showMain();
 			System.out.println("로그인 성공 후 main frame" + mainFrame);
 			mainFrame.setLoginName(mainFrame.clientDTO.getName() + "님 환영합니다~^^*");
 			
@@ -171,8 +170,10 @@ public class LoginForm extends Depth1Page {
 			DiaryPage diaryPage =(DiaryPage)mainFrame.pages[MainFrame.DIARY];
 			diaryPage.getPlanList();
 			diaryPage.printNum();
-			clientLoginPage.setVisible(false);
+			//clientLoginPage.setVisible(false);
 			
+			System.out.println("왜 ?");
+			clientLoginPage.showMain();
 		}
 
 	}

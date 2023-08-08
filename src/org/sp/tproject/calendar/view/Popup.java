@@ -202,7 +202,7 @@ public class Popup extends JFrame implements ActionListener{
 		if(result > 0) {
 			System.out.println("등록후 client 는 "+diaryPage.mainFrame.clientDTO);
 			
-			//JOptionPane.showMessageDialog(this, "등록 성공!");
+			JOptionPane.showMessageDialog(this, "등록 성공!");
 			this.setVisible(false); //현재창 닫기
 			diaryPage.getPlanList(); //db 불러오기
 			diaryPage.printNum();

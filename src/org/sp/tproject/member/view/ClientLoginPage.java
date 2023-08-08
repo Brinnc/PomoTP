@@ -26,9 +26,9 @@ public class ClientLoginPage extends JFrame{
 		
 		pack();
 		
-		if(mainFrame.clientDTO==null) {
-			setVisible(true);
-		}
+		
+		setVisible(true);
+		
 		setLocationRelativeTo(null);
 		
 		showHideDepth1(LOGIN);
@@ -53,7 +53,9 @@ public class ClientLoginPage extends JFrame{
 	public void showMain() {
 		System.out.println("showmain에서 "+ mainFrame);
 		mainFrame.setVisible(true);
-		this.setVisible(false);
+		if(mainFrame.clientDTO!=null) {
+			this.setVisible(false);
+		}
 	}
 	
 
